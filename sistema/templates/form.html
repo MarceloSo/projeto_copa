@@ -1,0 +1,19 @@
+<form action="/salvar/" method="POST">{% csrf_token %}
+
+	<input type="hidden" id="codigo" name="codigo" value="{{ selecao.pk|default_if_none:'0' }}">	
+
+	<label>Selecao 1:</label>
+		<input type="text" name="time1" value="{{selecao.time1}}" id="time1" />
+
+	<label>Gols</label>
+		<input type="text" name="gols1" value="{{selecao.gols1}}" id="gols1"/> <br>-- X -- <br>
+
+	<label>Selecao 2:</label>
+		<input type="text" name="time2" value="{{selecao.time2}}" id="time2" />
+
+	<label>Gols</label>
+		<input type="text" name="gols2" value="{{selecao.gols2}}" id="gols2"/> <br><br>
+
+	<button type="submit">Salvar</button> 
+
+</form>

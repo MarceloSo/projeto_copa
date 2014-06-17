@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copa 2014</title>
+</head>
+<body>
+		<h1>Jogos Copa 2014</h1>
+		<a href="/adicionar/">Adicionar </a>
+		<br/>
+
+		{% for selecao in selecoes %}	
+			{{selecao.time1}} - {{selecao.gols1}} X {{selecao.time2}} - {{selecao.gols2}}  </a><br/>
+		{% endfor %}
+
+</body>
+</html> 
